@@ -110,7 +110,7 @@ switch($option)
         break;
 
     case 2:
-        while ($computerCount <=17 || $computerCount <=21) {
+        while ($computerCount <=17) {
             list($pickCard, $cards) = $cardsOnDesk->pickACard($cardsForDesk);
             $cardsOnDesk->setCardsOnDesk($cards);
             $computer->addComputerCards($pickCard);

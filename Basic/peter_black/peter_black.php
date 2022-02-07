@@ -21,6 +21,7 @@ for ($i = 0; $i < 24; $i++) {
 }
 
 $count = 1;
+
 while (count($player->getCards()) > 1 || count($npc->getCards()) > 1) {
     echo "Player: ";
     foreach ($player->getCards() as $card) {
@@ -33,6 +34,7 @@ while (count($player->getCards()) > 1 || count($npc->getCards()) > 1) {
     }
     echo PHP_EOL;
 echo "-------------------------------------------------" . PHP_EOL;
+
     $player->disBand();
     $npc->disBand();
 
@@ -59,6 +61,7 @@ echo "-------------------------------------------------" . PHP_EOL;
             break;
     }
 }
+
 if (count($player->getCards()) === 0) {
     echo "Player won!" . PHP_EOL;
     echo "Npc has ";

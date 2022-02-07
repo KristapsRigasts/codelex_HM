@@ -12,7 +12,6 @@ class DogTest
         }else {
             echo "FAIL";
         }
-
     }
 
     public function checkIfDogFatherMethodIsCorrect(): string
